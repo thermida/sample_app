@@ -4,6 +4,11 @@ ruby '2.2.0'
 
 gem 'rails', '4.2.0'
 
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails'
+end
+
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
